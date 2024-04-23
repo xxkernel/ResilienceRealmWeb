@@ -13,6 +13,12 @@ import { FooterComponent } from './pages/home/footer/footer.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { CardsComponent } from './pages/pricing/cards/cards.component';
 import { StudiosComponent } from './pages/studios/studios.component';
+import { AlmatyStudiosComponent } from './pages/almaty-studios/almaty-studios.component';
+import { AstanaStudiosComponent } from './pages/astana-studios/astana-studios.component';
+import { UralskStudiosComponent } from './pages/uralsk-studios/uralsk-studios.component';
+import { ShymkentStudiosComponent } from './pages/shymkent-studios/shymkent-studios.component';
+import { KaragandaStudiosComponent } from './pages/karaganda-studios/karaganda-studios.component';
+import { ButtonsCityComponent } from './pages/studios/buttons-city/buttons-city.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +32,12 @@ import { StudiosComponent } from './pages/studios/studios.component';
     PricingComponent,
     CardsComponent,
     StudiosComponent,
+    AlmatyStudiosComponent,
+    AstanaStudiosComponent,
+    UralskStudiosComponent,
+    ShymkentStudiosComponent,
+    KaragandaStudiosComponent,
+    ButtonsCityComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

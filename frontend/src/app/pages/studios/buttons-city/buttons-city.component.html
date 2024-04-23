@@ -1,0 +1,165 @@
+<!-- <div class="inline-flex rounded-md shadow-sm" role="group">
+  <button
+    (click)="navigateTo('almaty')"
+    type="button"
+    class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white"
+  >
+    Almaty
+  </button>
+  <button
+    (click)="navigateTo('astana')"
+    type="button"
+    class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white"
+  >
+    Astana
+  </button>
+  <button
+    (click)="navigateTo('uralsk')"
+    type="button"
+    class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white"
+  >
+    Uralsk
+  </button>
+  <button
+    (click)="navigateTo('shymkent')"
+    type="button"
+    class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white"
+  >
+    Shymkent
+  </button>
+  <button
+    (click)="navigateTo('karaganda')"
+    type="button"
+    class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white"
+  >
+    Karaganda
+  </button>
+</div> -->
+
+<div class="flex justify-center items-center pt-28">
+  <button
+    type="button"
+    data-popover-target="popover-default"
+    data-popover-placement="bottom-end"
+    (click)="navigateTo('almaty')"
+    class="py-3 px-6 me-2 mb-2 text-base font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+  >
+    Almaty
+  </button>
+  <div
+    data-popover
+    id="popover-default"
+    role="tooltip"
+    class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+  >
+    <div class="px-3 py-2 flex justify-center items-center flex-col">
+      <a routerLink="/">Gym</a>
+      <a routerLink="/">Boxing</a>
+      <a routerLink="/">Karate</a>
+      <a routerLink="/">Taekwondo</a>
+      <a routerLink="/">Yoga</a>
+      <a routerLink="/">Bassein</a>
+    </div>
+    <div data-popper-arrow></div>
+  </div>
+  <button
+    data-popover-target="popover-default_1"
+    data-popover-placement="bottom-end"
+    type="button"
+    (click)="navigateTo('astana')"
+    class="py-3 px-6 me-2 mb-2 text-base font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+  >
+    Astana
+  </button>
+  <div
+    data-popover
+    id="popover-default_1"
+    role="tooltip"
+    class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+  >
+    <div class="px-3 py-2 flex justify-center items-center flex-col">
+      <a routerLink="/">Gym</a>
+      <a routerLink="/">Boxing</a>
+      <a routerLink="/">Karate</a>
+      <a routerLink="/">Taekwondo</a>
+      <a routerLink="/">Yoga</a>
+      <a routerLink="/">Bassein</a>
+    </div>
+    <div data-popper-arrow></div>
+  </div>
+  <button
+    data-popover-target="popover-default_2"
+    data-popover-placement="bottom-end"
+    type="button"
+    (click)="navigateTo('uralsk')"
+    class="py-3 px-6 me-2 mb-2 text-base font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+  >
+    Uralsk
+  </button>
+  <div
+    data-popover
+    id="popover-default_2"
+    role="tooltip"
+    class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+  >
+    <div class="px-3 py-2 flex justify-center items-center flex-col">
+      <a routerLink="/">Gym</a>
+      <a routerLink="/">Boxing</a>
+      <a routerLink="/">Karate</a>
+      <a routerLink="/">Taekwondo</a>
+      <a routerLink="/">Yoga</a>
+      <a routerLink="/">Bassein</a>
+    </div>
+    <div data-popper-arrow></div>
+  </div>
+  <button
+    data-popover-target="popover-default_3"
+    data-popover-placement="bottom-end"
+    type="button"
+    (click)="navigateTo('shymkent')"
+    class="py-3 px-6 me-2 mb-2 text-base font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+  >
+    Shymkent
+  </button>
+  <div
+    data-popover
+    id="popover-default_3"
+    role="tooltip"
+    class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+  >
+    <div class="px-3 py-2 flex justify-center items-center flex-col">
+      <a routerLink="/">Gym</a>
+      <a routerLink="/">Boxing</a>
+      <a routerLink="/">Karate</a>
+      <a routerLink="/">Taekwondo</a>
+      <a routerLink="/">Yoga</a>
+      <a routerLink="/">Bassein</a>
+    </div>
+    <div data-popper-arrow></div>
+  </div>
+  <button
+    data-popover-target="popover-default_"
+    data-popover-placement="bottom-end"
+    type="button"
+    (click)="navigateTo('karaganda')"
+    class="py-3 px-6 me-2 mb-2 text-base font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+  >
+    Karaganda
+  </button>
+  <div
+    data-popover
+    id="popover-default_"
+    role="tooltip"
+    class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+  >
+    <div class="px-3 py-2 flex justify-center items-center flex-col">
+      <a routerLink="/">Gym</a>
+      <a routerLink="/">Boxing</a>
+      <a routerLink="/">Karate</a>
+      <a routerLink="/">Taekwondo</a>
+      <a routerLink="/">Yoga</a>
+      <a routerLink="/">Bassein</a>
+    </div>
+    <div data-popper-arrow></div>
+  </div>
+</div>
