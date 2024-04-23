@@ -9,5 +9,5 @@ urlpatterns = [
     path('user/', UserProfileView.as_view()),
     path('gyms/<str:city>/', GymsByCityView.as_view(), name='gyms-by-city'),
     path('gyms/<str:city>/<str:category_name>/', GymsByCityCategoryView.as_view(), name='gyms-by-city-category'),
-    path('gyms/<int:id>', GymDetailView.as_view())
+    path('gyms/id/<int:id>/', GymDetailView.as_view(), name='gym-detail'),
 ]

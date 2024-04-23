@@ -3,6 +3,7 @@ from rest_framework.generics import RetrieveAPIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from django.shortcuts import get_object_or_404
 
 from ..models import Gym
 from ..serializers import GymSerializer
@@ -25,9 +26,6 @@ class GymsByCityCategoryView(APIView):
 
 class GymDetailView(APIView):
     def get(self, request, id):
-        gym = Gym.objects.filter(id=id).first()
-        if gym:
-            serializer = GymSerializer(gym)
-            return Response(serializer.data)
-        else:
-            return Response({'message': 'Gym not found'}, status=404)
+        gym = get_object_or_404(Gym, id=id)
+        serializer = GymSerializer(gym)
+        return Response(serializer.data)

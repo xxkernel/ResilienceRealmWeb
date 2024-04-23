@@ -17,6 +17,9 @@ class Gym(models.Model):
     description = models.TextField()
     city = models.CharField(max_length=100, choices=CITY_CHOICES, default='almaty')
     categories = models.ManyToManyField('Category', related_name='gyms')
+    image_url1 = models.URLField(blank=True, null=True)
+    image_url2 = models.URLField(blank=True, null=True)
+    image_url3 = models.URLField(blank=True, null=True)
 
     # Удобства
     shower = models.BooleanField(default=False, verbose_name="Душ")
