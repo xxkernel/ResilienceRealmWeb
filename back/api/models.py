@@ -12,6 +12,7 @@ class Gym(models.Model):
         ('karaganda', 'Караганда'),
         ('oral', 'Орал')
     ]
+    id = models.PositiveIntegerField(primary_key=True)
     name = models.CharField(max_length=255)
     address = models.CharField(max_length=500)
     description = models.TextField()
@@ -45,7 +46,6 @@ class Subscription(models.Model):
         ('annual', 'Годовой'),
     ]
     user = models.ForeignKey(User, related_name='subscriptions', on_delete=models.CASCADE)
-    gym = models.ForeignKey(Gym, related_name='subscriptions', on_delete=models.CASCADE)
     start_date = models.DateField()
     end_date = models.DateField()
     type = models.CharField(max_length=50, choices=TYPE_CHOICES)

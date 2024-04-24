@@ -25,7 +25,18 @@ class GymsByCityCategoryView(APIView):
 
 
 class GymDetailView(APIView):
-    def get(self, request, id):
-        gym = get_object_or_404(Gym, id=id)
-        serializer = GymSerializer(gym)
-        return Response(serializer.data)
+    def get(self, request, name):
+        try:
+            gym = Gym.objects.get(name=name)
+            serializer = GymSerializer(gym)
+            return Response(serializer.data)
+        except Gym.DoesNotExist as e:
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+    def get_queryset(self):
+        return Gym.objects.filter(gym_id=self.kwargs['gym_id'], is_published=True)
+
+@api_view(["GET"])
+def GymDetail(request, name):
+    gym = Gym.objects.get(name=name)
+    serializer = GymSerializer(gym)
+    return Response(serializer.data)
