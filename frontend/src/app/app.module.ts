@@ -8,7 +8,7 @@ import { CarouselComponent } from './pages/home/carousel/carousel.component';
 import { AboutComponent } from './pages/home/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import { TypesOfAboutComponent } from './pages/home/types-of-about/types-of-about.component';
-import { NavbarComponent } from './pages/home/navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './pages/home/footer/footer.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { CardsComponent } from './pages/pricing/cards/cards.component';
@@ -19,6 +19,7 @@ import { UralskStudiosComponent } from './pages/uralsk-studios/uralsk-studios.co
 import { ShymkentStudiosComponent } from './pages/shymkent-studios/shymkent-studios.component';
 import { KaragandaStudiosComponent } from './pages/karaganda-studios/karaganda-studios.component';
 import { ButtonsCityComponent } from './pages/studios/buttons-city/buttons-city.component';
+import { SelectMainComponent } from './pages/almaty-studios/select-main/select-main.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ButtonsCityComponent } from './pages/studios/buttons-city/buttons-city.
     ShymkentStudiosComponent,
     KaragandaStudiosComponent,
     ButtonsCityComponent,
+    SelectMainComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

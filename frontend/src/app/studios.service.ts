@@ -9,28 +9,22 @@ import { Country } from './studios.model';
 export class StudiosService {
   constructor(private client: HttpClient) {}
   getAlmaty(): Observable<Country[]> {
-    return this.client.get<Country[]>(
-      'http://127.0.0.1:8000/studios/almaty/gym'
-    );
+    return this.client.get<Country[]>('http://127.0.0.1:8000/studios/almaty/');
   }
   getAstana(): Observable<Country[]> {
-    return this.client.get<Country[]>(
-      'http://127.0.0.1:8000/studios/astana/gym'
-    );
+    return this.client.get<Country[]>('http://127.0.0.1:8000/studios/astana/');
   }
   getUralsk(): Observable<Country[]> {
-    return this.client.get<Country[]>(
-      'http://127.0.0.1:8000/studios/uralsk/gym'
-    );
+    return this.client.get<Country[]>('http://127.0.0.1:8000/studios/uralsk/');
   }
   getShymkent(): Observable<Country[]> {
     return this.client.get<Country[]>(
-      'http://127.0.0.1:8000/studios/shymkent/gym'
+      'http://127.0.0.1:8000/studios/shymkent/'
     );
   }
   getKaraganda(): Observable<Country[]> {
     return this.client.get<Country[]>(
-      'http://127.0.0.1:8000/studios/karaganda/gym'
+      'http://127.0.0.1:8000/studios/karaganda/'
     );
   }
 }
