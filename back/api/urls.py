@@ -11,4 +11,6 @@ urlpatterns = [
     path('gyms/<str:city>/<str:category_name>/', GymsByCityCategoryView.as_view(), name='gyms-by-city-category'),
     path('gyms/<str:name/', GymDetail, name='gym-detail'),
     path('create-subscription/<str:type>/', CreateSubscriptionView.as_view(), name='create-subscription'),
+    path('gyms/', list_gyms, name='list-gyms'),  # FBV
+
 ]

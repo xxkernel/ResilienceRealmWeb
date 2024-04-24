@@ -40,3 +40,11 @@ def GymDetail(request, name):
     gym = Gym.objects.get(name=name)
     serializer = GymSerializer(gym)
     return Response(serializer.data)
+
+
+@api_view(['GET'])
+def list_gyms(request):
+    if request.method == 'GET':
+        gyms = Gym.objects.all()
+        serializer = GymSerializer(gyms, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
