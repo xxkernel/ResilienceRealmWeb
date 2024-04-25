@@ -27,6 +27,8 @@ import { SelectAsComponent } from './pages/astana-studios/select-as/select-as.co
 import { SelectShComponent } from './pages/shymkent-studios/select-sh/select-sh.component';
 import { SelectKaComponent } from './pages/karaganda-studios/select-ka/select-ka.component';
 import { LoginComponent } from './pages/login/login.component';
+import { StudiosService } from './studios.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -60,8 +62,9 @@ import { LoginComponent } from './pages/login/login.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [StudiosService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { gyms } from '../../../gyms';
 import { Gym } from '../../../studios.model';
 import { StudiosService } from '../../../studios.service';
 
@@ -14,11 +13,12 @@ export class SelectMainComponent implements OnInit {
   filteredGyms: Gym[] = [];
   selectedGym: Gym | null = null;
 
-  constructor(private StudiosService: StudiosService) {}
+  constructor(private studiosService: StudiosService) {}
 
   ngOnInit(): void {
-    this.StudiosService.getAlmaty().subscribe((gyms) => {
+    this.studiosService.getAlmaty().subscribe((gyms) => {
       this.gyms = gyms;
+      this.filteredGyms = gyms;
     });
   }
 
