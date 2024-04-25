@@ -3,11 +3,11 @@ import { gyms } from '../../../gyms';
 import { Gym } from '../../../studios.model';
 
 @Component({
-  selector: 'app-select-main',
-  templateUrl: './select-main.component.html',
-  styleUrls: ['./select-main.component.css'],
+  selector: 'app-select-ka',
+  templateUrl: './select-ka.component.html',
+  styleUrl: './select-ka.component.css',
 })
-export class SelectMainComponent {
+export class SelectKaComponent {
   gyms: Gym[] = gyms;
   selectedCategory: string | null = null;
   filteredGyms: Gym[] = [];

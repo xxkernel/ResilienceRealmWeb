@@ -20,6 +20,12 @@ import { ShymkentStudiosComponent } from './pages/shymkent-studios/shymkent-stud
 import { KaragandaStudiosComponent } from './pages/karaganda-studios/karaganda-studios.component';
 import { ButtonsCityComponent } from './pages/studios/buttons-city/buttons-city.component';
 import { SelectMainComponent } from './pages/almaty-studios/select-main/select-main.component';
+import { DisplayedGymsComponent } from './pages/almaty-studios/displayed-gyms/displayed-gyms.component';
+import { SelectUComponent } from './pages/uralsk-studios/select-u/select-u.component';
+import { SelectAsComponent } from './pages/astana-studios/select-as/select-as.component';
+import { SelectShComponent } from './pages/shymkent-studios/select-sh/select-sh.component';
+import { SelectKaComponent } from './pages/karaganda-studios/select-ka/select-ka.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +46,12 @@ import { SelectMainComponent } from './pages/almaty-studios/select-main/select-m
     KaragandaStudiosComponent,
     ButtonsCityComponent,
     SelectMainComponent,
+    DisplayedGymsComponent,
+    SelectUComponent,
+    SelectAsComponent,
+    SelectShComponent,
+    SelectKaComponent,
+    LoginComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

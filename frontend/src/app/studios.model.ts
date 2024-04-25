@@ -1,25 +1,23 @@
-export interface GymRoom {
+// gym.interface.ts
+export interface Gym {
   id: number;
-  categories: string[];
   name: string;
   address: string;
   description: string;
-  images: string[];
   city: string;
+  categories: Category[];
+  image: string; // Array to hold multiple image URLs
   shower: boolean;
-  wardrobe: boolean;
-  store: boolean;
+  locker_room: boolean;
+  shop: boolean;
   wifi: boolean;
   music: boolean;
   parking: boolean;
-  twentyFourSeven: boolean;
+  twenty_four_seven: boolean;
 }
 
-export interface Country {
+// category.interface.ts
+export interface Category {
+  id?: number;
   name: string;
-  gyms: GymRoom[];
-}
-
-export interface CountriesData {
-  countries: Country[];
 }

@@ -6,4 +6,10 @@ import { Router } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  constructor(private router: Router) {}
+
+  navigateToLogin() {
+    this.router.navigateByUrl('/login');
+  }
+}
