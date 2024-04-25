@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
       const formData = this.loginForm.value;
       const token = formData.username + ':' + formData.password;
 
-      this.http.post<any>('/login', { token }).subscribe(
+      this.http.post<any>('http://127.0.0.1:8000/login', { token }).subscribe(
         (response) => {
           console.log(response);
         },

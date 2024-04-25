@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'studios/uralsk', component: UralskStudiosComponent },
   { path: 'studios/shymkent', component: ShymkentStudiosComponent },
   { path: 'studios/karaganda', component: KaragandaStudiosComponent },
-  { path: '/login', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({
