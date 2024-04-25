@@ -1,17 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { gyms } from '../../../gyms';
 import { Gym } from '../../../studios.model';
+import { StudiosService } from '../../../studios.service';
 
 @Component({
   selector: 'app-select-main',
   templateUrl: './select-main.component.html',
   styleUrls: ['./select-main.component.css'],
 })
-export class SelectMainComponent {
-  gyms: Gym[] = gyms;
+export class SelectMainComponent implements OnInit {
+  gyms: Gym[] = [];
   selectedCategory: string | null = null;
   filteredGyms: Gym[] = [];
   selectedGym: Gym | null = null;
+
+  constructor(private StudiosService: StudiosService) {}
+
+  ngOnInit(): void {
+    this.StudiosService.getAlmaty().subscribe((gyms) => {
+      this.gyms = gyms;
+    });
+  }
 
   showGymsByCategory(category: string) {
     this.selectedCategory = category;

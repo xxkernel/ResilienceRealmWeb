@@ -8,11 +8,11 @@ import { Gym } from './studios.model';
 })
 export class StudiosService {
   constructor(private client: HttpClient) {}
-  getAlmaty(): Observable<Gym> {
-    return this.client.get<Gym>('http://127.0.0.1:8000/studios/almaty/');
+  getAlmaty(): Observable<Gym[]> {
+    return this.client.get<Gym[]>('http://127.0.0.1:8000/studios/almaty/');
   }
-  getAlmatyItem(username: string): Observable<Gym> {
-    return this.client.get<Gym>(
+  getAlmatyItem(username: string): Observable<Gym[]> {
+    return this.client.get<Gym[]>(
       `http://127.0.0.1:8000/studios/almaty/${username}`
     );
   }
